@@ -1,0 +1,15 @@
+#First runner
+
+on:
+  push:
+    branches:
+      - master  # Or whichever branch you want
+
+jobs:
+  hello:
+    name: Say Hello
+    runs-on: self-hosted
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello, World from self-hosted runner!"
